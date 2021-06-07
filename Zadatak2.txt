@@ -1,0 +1,33 @@
+using System;
+
+public class KlassD
+{
+public bool suprotno1(bool e){
+
+return e!=e;
+}
+public int suprotno2(int e){
+
+return e*-1;
+
+}
+
+
+}
+
+
+
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("broj: ");
+		int broj=100;
+		bool b=true;	
+	KlassD suprtono1= new KlassD();
+	KlassD suprotno2= new KlassD();	
+	
+		Console.WriteLine("bool " + suprtono1.suprotno1(b) + ", broj " + suprotno2.suprotno2(broj));
+		Console.ReadLine();
+	}
+}
