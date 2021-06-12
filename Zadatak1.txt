@@ -2,15 +2,17 @@ using System;
 
 public class KlassG
 {
-	public void plus10(int broj){
-	
-	broj=broj*10;
-	Console.WriteLine(broj);
+	public void plus10(int broj)
+	{
+
+		broj = broj * 10;
+		Console.WriteLine(broj);
 	}
-		public void f50(int broj){
-	
-	broj=50;
-	Console.WriteLine(broj);
+	public void f50(int broj)
+	{
+
+		broj = 50;
+		Console.WriteLine(broj);
 	}
 
 
@@ -23,11 +25,14 @@ public class Program
 	public static void Main()
 	{
 		Console.WriteLine("broj: ");
-		int broj=Convert.ToInt32(Console.ReadLine());
-	KlassG plus= new KlassG();
-	KlassG mnozenje= new KlassG();	
-	
-		Console.WriteLine("Zbrajanje " + plus.f50(broj) + ", mnozenje " + mnozenje.plus10(broj));
+		int broj = Convert.ToInt32(Console.ReadLine());
+		KlassG plus = new KlassG();
+		KlassG mnozenje = new KlassG();
+
+		Console.Write("Zbrajanje: ");
+		plus.f50(broj);
+			Console.WriteLine(", mnozenje "); 
+			 mnozenje.plus10(broj);
 		Console.ReadLine();
 	}
 }
