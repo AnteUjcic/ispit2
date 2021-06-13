@@ -1,29 +1,18 @@
 using System;
 
-
-
-
 public class Cat
 {
-public bool opasna(bool opasnost){
-
-return opasnost!=opasnost;
+	public void Opasnost(bool opasna)
+	{
+		 opasna = false;
+	}
 }
-public void opasna2(int e){
-
-
-}
-}
-public class Gepard:Cat
+public class Gepard : Cat
 {
-public bool opasna(bool opasnost){
-
-
-return opasnost=true;
-
-}
-
-
+	public void Opasnost(bool opasnost)
+	{ 
+		Console.WriteLine(opasnost = true);
+	}
 }
 
 
@@ -31,10 +20,11 @@ public class Program
 {
 	public static void Main()
 	{
-	bool opasa=false;
-		Gepard g=new Gepard();
-		
-		Console.WriteLine("geopard je " + g.opasna(opasa) + ", broj " + suprotno2.suprotno2(broj));
+		bool opasna = false;
+		Gepard g = new Gepard();
+
+		Console.WriteLine("geopard je ");
+		g.Opasnost(opasna); 
 		Console.ReadLine();
 	}
 }
